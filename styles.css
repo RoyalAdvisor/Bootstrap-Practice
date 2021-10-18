@@ -1,0 +1,72 @@
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0;
+}
+
+/* HEADINGS */
+
+.home-heading {
+    background-image: url(/Images/130841-black-and-blue-polygon-abstract-background\(3\).jpg);
+    background-size: cover;
+}
+.product-heading {
+    background-image: url(/Images/130841-black-and-blue-polygon-abstract-background\(3\).jpg);
+    background-size: cover;
+}
+.bulk-heading {
+    background-image: url(/Images/130841-black-and-blue-polygon-abstract-background\(3\).jpg);
+    background-size: cover;
+}
+/* CARDS */
+
+.card {
+    display: block;
+    width: 35rem;
+    height: 45rem;
+    margin-top: 5rem;
+    transition-duration: 200ms;
+    text-align: center;
+
+}
+img {
+    border-radius: 5px;
+    margin: auto;
+}
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card:hover {
+    transform: scale(1.2);
+}
+
+/* FLIPCARDS */
+
+.flip-card {
+    display: block;
+    width: 40rem;
+    height: 55rem;
+    margin-top: 5rem;
+    text-align: center;
+    transition-duration: 200ms;
+    justify-content: space-evenly;
+}
+.flip cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flip-card:hover {
+    transform: scale(1.2);
+}
+
+
+/* BUTTONS */
+.btn-item {
+    width: 10rem;
+    height: 5rem;
+    margin: auto;
+    margin-top: 2rem;
+}
