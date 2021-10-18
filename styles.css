@@ -70,3 +70,27 @@ img {
     margin: auto;
     margin-top: 2rem;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 400px) { 
+    .card {
+        width: auto;
+        height: max-content;
+    }
+    img {
+        width: 15rem;
+        height: 15rem;
+        margin: auto;
+    }
+    .flip-card {
+        width: auto;
+        height: auto;
+    }
+    .flip-card:hover {
+        transform: scale(0.8);
+    }
+    .card:hover {
+        transform: scale(0.8);
+    }
+}
