@@ -8,23 +8,23 @@
 /* HEADINGS */
 
 .home-heading {
-    background-image: url(/Images/130841-black-and-blue-polygon-abstract-background\(3\).jpg);
+    background-image: url(/Images/white.png);
     background-size: cover;
 }
 .product-heading {
-    background-image: url(/Images/130841-black-and-blue-polygon-abstract-background\(3\).jpg);
+    background-image: url(/Images/white.png);
     background-size: cover;
 }
 .bulk-heading {
-    background-image: url(/Images/130841-black-and-blue-polygon-abstract-background\(3\).jpg);
+    background-image: url(/Images/white.png);
     background-size: cover;
 }
 /* CARDS */
 
 .card {
     display: block;
-    width: 35rem;
-    height: 45rem;
+    width: 25rem;
+    height: 40rem;
     margin-top: 5rem;
     transition-duration: 200ms;
     text-align: center;
@@ -40,7 +40,7 @@ img {
     flex-wrap: wrap;
 }
 .card:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* FLIPCARDS */
@@ -48,7 +48,7 @@ img {
 .flip-card {
     display: block;
     width: 40rem;
-    height: 55rem;
+    height: 45rem;
     margin-top: 5rem;
     text-align: center;
     transition-duration: 200ms;
@@ -59,7 +59,7 @@ img {
     flex-wrap: wrap;
 }
 .flip-card:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -71,6 +71,13 @@ img {
     margin-top: 2rem;
 }
 
+/* FOOTER */
+.social-img {
+    padding-left: 50px;
+}
+.tag {
+    text-decoration: none;
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 400px) { 
@@ -92,5 +99,12 @@ img {
     }
     .card:hover {
         transform: scale(0.8);
+    }
+    .footer {
+        width: 100%;
+    }
+    .social-img {
+        width: 5rem;
+        height: 5rem;
     }
 }
