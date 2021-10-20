@@ -134,3 +134,33 @@ img {
         height: 15rem;
     }
 }
+
+@media screen and (max-width: 600px) { 
+    .card {
+        width: auto;
+        height: max-content;
+    }
+    img {
+        width: 20rem;
+        height: 20rem;
+        margin: auto;
+    }
+    .flip-card {
+        width: auto;
+        height: auto;
+    }
+    .footer {
+        display: block;
+    }
+    .social-img {
+        width: 5rem;
+        height: 5rem;
+    }
+    .btn-offcanvas {
+        margin-left: 5.5rem;
+    }
+    .bulk-image {
+        width: 20rem;
+        height: 15rem;
+    }
+}
