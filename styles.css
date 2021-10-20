@@ -17,15 +17,15 @@ main {
 /* HEADINGS */
 
 .home-heading {
-    background-image: url(/Images/white.png);
+    background-image: url(/Images/header.jpg);
     background-size: cover;
 }
 .product-heading {
-    background-image: url(/Images/white.png);
+    background-image: url(/Images/header.jpg);
     background-size: cover;
 }
 .bulk-heading {
-    background-image: url(/Images/white.png);
+    background-image: url(/Images/header.jpg);
     background-size: cover;
 }
 /* CARDS */
