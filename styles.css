@@ -82,6 +82,9 @@ img {
     display: flex;
     justify-content: space-evenly;
 }
+.btn-offcanvas {
+    background-color: transparent;
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 400px) { 
