@@ -108,4 +108,7 @@ img {
         width: 5rem;
         height: 5rem;
     }
+    .btn-offcanvas {
+        margin-left: 5.5rem;
+    }
 }
