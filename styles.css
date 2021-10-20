@@ -98,14 +98,8 @@ img {
         width: auto;
         height: auto;
     }
-    .flip-card:hover {
-        transform: scale(0.8);
-    }
-    .card:hover {
-        transform: scale(0.8);
-    }
     .footer {
-        width: 100%;
+        display: block;
     }
     .social-img {
         width: 5rem;
