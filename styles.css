@@ -28,6 +28,15 @@ main {
     background-image: url(/Images/header.jpg);
     background-size: cover;
 }
+
+/* CAROUSEL
+
+.carousel-container {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 20rem;
+} */
+
 /* CARDS */
 
 .card {
