@@ -39,9 +39,9 @@ img {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.card:hover {
+/* .card:hover {
     transform: scale(1.1);
-}
+} */
 
 /* FLIPCARDS */
 
@@ -58,9 +58,9 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
-.flip-card:hover {
+/* .flip-card:hover {
     transform: scale(1.1);
-}
+} */
 
 
 /* BUTTONS */
@@ -77,6 +77,10 @@ img {
 }
 .tag {
     text-decoration: none;
+}
+.footer {
+    display: flex;
+    justify-content: space-evenly;
 }
 /* MEDIA QUERIES */
 
