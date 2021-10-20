@@ -99,8 +99,8 @@ img {
         height: max-content;
     }
     img {
-        width: 15rem;
-        height: 15rem;
+        width: 20rem;
+        height: 20rem;
         margin: auto;
     }
     .flip-card {
@@ -116,5 +116,9 @@ img {
     }
     .btn-offcanvas {
         margin-left: 5.5rem;
+    }
+    .bulk-image {
+        width: 20rem;
+        height: 15rem;
     }
 }
