@@ -1,159 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-In</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-</head>
-<body>
-                                  <!-- NAVBAR -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
     <header id="home">
-        <nav class="navbar navbar-light bg-white static-top p-4 shadow-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand fw-bold" href="#">SIGN-IN.</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AIRWALKERS.</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      <nav class="navbar navbar-light bg-white static-top p-4 shadow-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">SIGN-IN.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                AIRWALKERS.
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sign-in.html">Sign-Up</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="offcanvasNavbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Store
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="offcanvasNavbarDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="/index.html">Product</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="sign-in.html">Sign-Up</a>
+                    <li>
+                      <a class="dropdown-item" href="/index.html"
+                        >Bulk Shopping</a
+                      >
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Store
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                        <li><a class="dropdown-item" href="/index.html" >Product</a></li>
-                        <li><a class="dropdown-item" href="/index.html">Bulk Shopping</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
-                      </ul>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pricing.html">Pricing</a>
                     </li>
                   </ul>
-                  <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
             </div>
-          </nav>
-    </header>
-                              <!-- FORM -->
-    <section id="Product">
-        <div class="bg-primary m-1 p-5 shadow-lg home-heading">
-            <h2 class="display-2 lead text-center text-black">Sign-In or Sign-Up</h2>
+          </div>
         </div>
-        <br>
-        <br>
-        <br>
+      </nav>
+    </header>
+    <!-- FORM -->
+    <section id="Product">
+      <div class="bg-primary m-1 p-5 shadow-lg home-heading">
+        <h2 class="display-2 lead text-center text-black">
+          Sign-In or Sign-Up
+        </h2>
+      </div>
+      <br />
+      <br />
+      <br />
     </section>
-    <br>
-    <br>
+    <br />
+    <br />
     <section>
-        <form class="row g-3  shadow-lg p-5 m-3" method="post" action="https://formspree.io/f/xleaknog">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">Province</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>Western Cape</option>
-                <option>Eastern Cape</option>
-                <option>Northern Cape</option>
-                <option>North West</option>
-                <option>Free State</option>
-                <option>Gauteng</option>
-                <option>Mpumalanga</option>
-                <option>Kwa-Zulu Natal</option>
-                <option>Limpopo</option>
-              </select>
-            </div>
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  I consent to the capturing of my information.
-                </label>
-              </div>
-            </div>
-            <br>
-            <br>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Sign-Up</button>
-              <button type="submit" class="btn btn-primary">Sign-In</button>
-            </div>
-          </form>
+      <form
+        class="row g-3 shadow-lg p-5 m-3"
+        method="post"
+        action="https://formspree.io/f/xleaknog"
+      >
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Province</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Western Cape</option>
+            <option>Eastern Cape</option>
+            <option>Northern Cape</option>
+            <option>North West</option>
+            <option>Free State</option>
+            <option>Gauteng</option>
+            <option>Mpumalanga</option>
+            <option>Kwa-Zulu Natal</option>
+            <option>Limpopo</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              I consent to the capturing of my information.
+            </label>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign-Up</button>
+          <button type="submit" class="btn btn-primary">Sign-In</button>
+        </div>
+      </form>
     </section>
-    <br>
-    <br>
-    <br>
-                                          <!-- FOOTER -->
+    <br />
+    <br />
+    <br />
+    <!-- FOOTER -->
     <footer>
-        <div class="bg-white p-5 shadow-lg footer">
+      <div class="bg-white p-5 shadow-lg footer">
         <h2 class="display-2 lead text-center text-black">AIRWALKERS.</h2>
-        <a href="https://facebook.com/" class="tag" >
-            <img src="/Images/facebook.svg" alt="Facebook" width="100rem" height="100rem" class="social-img">
+        <a href="https://facebook.com/" class="tag">
+          <img
+            src="/Images/social-svg/facebook.svg"
+            alt="Facebook"
+            width="100rem"
+            height="100rem"
+            class="social-img"
+          />
         </a>
         <a href="https://instagram.com/" class="tag">
-            <img src="/Images/instagram.svg" alt="Instagram" width="100rem" height="100rem" class="social-img">  
+          <img
+            src="/Images/social-svg/instagram.svg"
+            alt="Instagram"
+            width="100rem"
+            height="100rem"
+            class="social-img"
+          />
         </a>
         <a href="https://twitter.com/" class="tag">
-            <img src="/Images/twitter.svg" alt="Twitter" width="100rem" height="100rem" class="social-img">  
+          <img
+            src="/Images/social-svg/twitter.svg"
+            alt="Twitter"
+            width="100rem"
+            height="100rem"
+            class="social-img"
+          />
         </a>
-        <button class="btn btn-offcanvas btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Copyright</button>
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Copyright @AIRWALKERS</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body small">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non consequatur architecto corporis iste, doloribus, quidem aut exercitationem tenetur iusto velit repellat. Ullam voluptatem delectus vitae ab nihil molestiae ea quis velit ratione, eos tempore quisquam quam numquam cupiditate recusandae quos hic omnis iure inventore. Cum molestias assumenda cupiditate dolor perspiciatis repellendus maxime suscipit, esse vitae, labore, officiis eligendi natus sit eveniet aspernatur magni consectetur ad? Fugiat eum tempore earum, cumque sapiente minus rerum. Ea illo aliquam deserunt ipsam suscipit voluptatibus veritatis porro est officiis tenetur quam reiciendis mollitia rerum laboriosam, sint distinctio? Laborum illo atque possimus obcaecati quia non quis sapiente, et officiis id? Tempore a asperiores perspiciatis, eum eos rem officia accusamus natus voluptas aperiam earum numquam doloribus eveniet culpa repudiandae praesentium consectetur id qui blanditiis ipsam consequatur ratione! Aliquid, unde pariatur blanditiis temporibus modi explicabo inventore eveniet porro sapiente odio cum repellat iusto illo ex ipsam beatae vero reprehenderit impedit, totam in saepe numquam distinctio dolores dolorem. Quod iusto ex similique labore natus beatae possimus dicta soluta. Officiis reiciendis qui in aut, saepe tenetur molestias cum quo pariatur voluptas sequi quas alias eligendi numquam blanditiis quasi ad delectus modi nisi animi eveniet illo. Facere odit excepturi consequatur non provident neque inventore, officiis earum. Optio, voluptatem quisquam, accusamus blanditiis necessitatibus quia voluptatum vitae voluptates ipsum cupiditate rem. Eius provident magni doloribus labore, praesentium sunt sit minus molestias est, suscipit, voluptatum nemo pariatur porro natus. Repudiandae, praesentium iure numquam quia dolorum quidem tenetur, nostrum illum itaque sunt facilis quibusdam asperiores nulla soluta tempore ut magnam consequatur eveniet magni, dolorem ipsa earum aperiam dolores! Impedit voluptates, modi voluptas natus rerum repellat. Nulla veniam, harum unde, cum quam rem, natus possimus voluptatum sequi reprehenderit magni a officia ipsa impedit quae debitis reiciendis odit fugiat molestiae vero. Incidunt suscipit ut doloremque inventore ullam fugit dolore nihil voluptatibus alias cupiditate perspiciatis, adipisci unde odit ipsa architecto est minus! Ipsa rem, adipisci pariatur magni quo voluptates tempore! Nam nulla obcaecati, minus explicabo doloremque, perferendis, rerum commodi harum accusamus maiores libero illum modi quam? Facilis itaque vero exercitationem inventore, dolore assumenda voluptates culpa? Dolorem maxime voluptate, sint ipsa quos harum tenetur eligendi fugit, itaque distinctio doloremque, labore tempore doloribus consectetur autem pariatur cupiditate. Vel, officia est? Amet consequuntur fugiat omnis magni iste vitae aliquam ullam molestiae sapiente, quam reprehenderit culpa, optio dolor officia voluptates quos veritatis tempore eius dignissimos. Quasi aperiam a impedit soluta! A, possimus?
-            </div>
-            <div class="copyright-header lead text-center text-black">
-                <h5>@AIRWALKERS 2021</h5>
-            </div>
-            </div>
+        <button
+          class="btn btn-offcanvas btn-lg"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom"
+        >
+          Copyright
+        </button>
+        <div
+          class="offcanvas offcanvas-bottom"
+          tabindex="-1"
+          id="offcanvasBottom"
+          aria-labelledby="offcanvasBottomLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+              Copyright @AIRWALKERS
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body small">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+            consequatur architecto corporis iste, doloribus, quidem aut
+            exercitationem tenetur iusto velit repellat. Ullam voluptatem
+            delectus vitae ab nihil molestiae ea quis velit ratione, eos tempore
+            quisquam quam numquam cupiditate recusandae quos hic omnis iure
+            inventore. Cum molestias assumenda cupiditate dolor perspiciatis
+            repellendus maxime suscipit, esse vitae, labore, officiis eligendi
+            natus sit eveniet aspernatur magni consectetur ad? Fugiat eum
+            tempore earum, cumque sapiente minus rerum. Ea illo aliquam deserunt
+            ipsam suscipit voluptatibus veritatis porro est officiis tenetur
+            quam reiciendis mollitia rerum laboriosam, sint distinctio? Laborum
+            illo atque possimus obcaecati quia non quis sapiente, et officiis
+            id? Tempore a asperiores perspiciatis, eum eos rem officia accusamus
+            natus voluptas aperiam earum numquam doloribus eveniet culpa
+            repudiandae praesentium consectetur id qui blanditiis ipsam
+            consequatur ratione! Aliquid, unde pariatur blanditiis temporibus
+            modi explicabo inventore eveniet porro sapiente odio cum repellat
+            iusto illo ex ipsam beatae vero reprehenderit impedit, totam in
+            saepe numquam distinctio dolores dolorem. Quod iusto ex similique
+            labore natus beatae possimus dicta soluta. Officiis reiciendis qui
+            in aut, saepe tenetur molestias cum quo pariatur voluptas sequi quas
+            alias eligendi numquam blanditiis quasi ad delectus modi nisi animi
+            eveniet illo. Facere odit excepturi consequatur non provident neque
+            inventore, officiis earum. Optio, voluptatem quisquam, accusamus
+            blanditiis necessitatibus quia voluptatum vitae voluptates ipsum
+            cupiditate rem. Eius provident magni doloribus labore, praesentium
+            sunt sit minus molestias est, suscipit, voluptatum nemo pariatur
+            porro natus. Repudiandae, praesentium iure numquam quia dolorum
+            quidem tenetur, nostrum illum itaque sunt facilis quibusdam
+            asperiores nulla soluta tempore ut magnam consequatur eveniet magni,
+            dolorem ipsa earum aperiam dolores! Impedit voluptates, modi
+            voluptas natus rerum repellat. Nulla veniam, harum unde, cum quam
+            rem, natus possimus voluptatum sequi reprehenderit magni a officia
+            ipsa impedit quae debitis reiciendis odit fugiat molestiae vero.
+            Incidunt suscipit ut doloremque inventore ullam fugit dolore nihil
+            voluptatibus alias cupiditate perspiciatis, adipisci unde odit ipsa
+            architecto est minus! Ipsa rem, adipisci pariatur magni quo
+            voluptates tempore! Nam nulla obcaecati, minus explicabo doloremque,
+            perferendis, rerum commodi harum accusamus maiores libero illum modi
+            quam? Facilis itaque vero exercitationem inventore, dolore assumenda
+            voluptates culpa? Dolorem maxime voluptate, sint ipsa quos harum
+            tenetur eligendi fugit, itaque distinctio doloremque, labore tempore
+            doloribus consectetur autem pariatur cupiditate. Vel, officia est?
+            Amet consequuntur fugiat omnis magni iste vitae aliquam ullam
+            molestiae sapiente, quam reprehenderit culpa, optio dolor officia
+            voluptates quos veritatis tempore eius dignissimos. Quasi aperiam a
+            impedit soluta! A, possimus?
+          </div>
+          <div class="copyright-header lead text-center text-black">
+            <h5>@AIRWALKERS 2021</h5>
+          </div>
         </div>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

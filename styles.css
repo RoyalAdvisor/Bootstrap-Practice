@@ -1,32 +1,32 @@
 body {
-    background-image: url(/Images/grey\ swirl.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(/Images/backgrounds/grey\ swirl-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main {
-    background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* NAVBAR */
 
 .navbar {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
 }
 
 /* HEADINGS */
 
 .home-heading {
-    background-image: url(/Images/header.jpg);
-    background-size: cover;
+  background-image: url(/Images/backgrounds/header-min.jpg);
+  background-size: cover;
 }
 .product-heading {
-    background-image: url(/Images/header.jpg);
-    background-size: cover;
+  background-image: url(/Images/backgrounds/header-min.jpg);
+  background-size: cover;
 }
 .bulk-heading {
-    background-image: url(/Images/header.jpg);
-    background-size: cover;
+  background-image: url(/Images/backgrounds/header-min.jpg);
+  background-size: cover;
 }
 
 /* CAROUSEL
@@ -40,22 +40,21 @@ main {
 /* CARDS */
 
 .card {
-    display: block;
-    width: 25rem;
-    height: 40rem;
-    margin-top: 5rem;
-    transition-duration: 200ms;
-    text-align: center;
-
+  display: block;
+  width: 25rem;
+  height: 40rem;
+  margin-top: 5rem;
+  transition-duration: 200ms;
+  text-align: center;
 }
 img {
-    border-radius: 5px;
-    margin: auto;
+  border-radius: 5px;
+  margin: auto;
 }
 .cards {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 /* .card:hover {
     transform: scale(1.1);
@@ -64,103 +63,102 @@ img {
 /* FLIPCARDS */
 
 .flip-card {
-    display: block;
-    width: 40rem;
-    height: 45rem;
-    margin-top: 5rem;
-    text-align: center;
-    transition-duration: 200ms;
-    justify-content: space-evenly;
+  display: block;
+  width: 40rem;
+  height: 45rem;
+  margin-top: 5rem;
+  text-align: center;
+  transition-duration: 200ms;
+  justify-content: space-evenly;
 }
 .flip cards {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 /* .flip-card:hover {
     transform: scale(1.1);
 } */
 
-
 /* BUTTONS */
 .btn-item {
-    width: 10rem;
-    height: 5rem;
-    margin: auto;
-    margin-top: 2rem;
+  width: 10rem;
+  height: 5rem;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 /* FOOTER */
 .social-img {
-    padding-left: 50px;
+  padding-left: 50px;
 }
 .tag {
-    text-decoration: none;
+  text-decoration: none;
 }
 .footer {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 .btn-offcanvas {
-    background-color: transparent;
+  background-color: transparent;
 }
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 400px) { 
-    .card {
-        width: auto;
-        height: max-content;
-    }
-    img {
-        width: 20rem;
-        height: 20rem;
-        margin: auto;
-    }
-    .flip-card {
-        width: auto;
-        height: auto;
-    }
-    .footer {
-        display: block;
-    }
-    .social-img {
-        width: 5rem;
-        height: 5rem;
-    }
-    .btn-offcanvas {
-        margin-left: 5.5rem;
-    }
-    .bulk-image {
-        width: 20rem;
-        height: 15rem;
-    }
+@media screen and (max-width: 400px) {
+  .card {
+    width: auto;
+    height: max-content;
+  }
+  img {
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+  }
+  .flip-card {
+    width: auto;
+    height: auto;
+  }
+  .footer {
+    display: block;
+  }
+  .social-img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .btn-offcanvas {
+    margin-left: 5.5rem;
+  }
+  .bulk-image {
+    width: 20rem;
+    height: 15rem;
+  }
 }
 
-@media screen and (max-width: 600px) { 
-    .card {
-        width: auto;
-        height: max-content;
-    }
-    img {
-        width: 20rem;
-        height: 20rem;
-        margin: auto;
-    }
-    .flip-card {
-        width: auto;
-        height: auto;
-    }
-    .footer {
-        display: block;
-    }
-    .social-img {
-        width: 5rem;
-        height: 5rem;
-    }
-    .btn-offcanvas {
-        margin-left: 5.5rem;
-    }
-    .bulk-image {
-        width: 20rem;
-        height: 15rem;
-    }
+@media screen and (max-width: 600px) {
+  .card {
+    width: auto;
+    height: max-content;
+  }
+  img {
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+  }
+  .flip-card {
+    width: auto;
+    height: auto;
+  }
+  .footer {
+    display: block;
+  }
+  .social-img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .btn-offcanvas {
+    margin-left: 5.5rem;
+  }
+  .bulk-image {
+    width: 20rem;
+    height: 15rem;
+  }
 }
